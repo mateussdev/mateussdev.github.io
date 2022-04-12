@@ -1,0 +1,53 @@
+/* Global ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--poppins);
+}
+
+:root {
+  /* Fonts */
+  --ubuntu: 'Ubuntu', sans-serif;
+  --poppins: 'Poppins', sans-serif;
+  --source-code: 'Source Code Pro', monospace;
+}
+
+h2 {
+  font-family: var(--ubuntu);
+}
+
+/* Header ==================== */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 20px;
+  background: #2E86C1;
+}
+
+#logo {
+  color: #00DEF8;
+  font-family: var(--source-code);
+  font-size: 2.5rem;
+}
+
+#logo span {
+  color: #fff;
+}
+
+#menu-items {
+  display: flex;
+  gap: 2rem;
+  font-weight: 400;
+}
+
+#menu-items .menu-item{
+  list-style: none;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #fff;
+}
