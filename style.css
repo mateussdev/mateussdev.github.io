@@ -63,6 +63,11 @@ header {
   color: #fff;
 }
 
+.menu-item a:hover {
+  color: rgba(255, 255, 255, 0.493);
+  transition: 400ms;
+}
+
 /* Home ===================== */
 #home {
   display: flex;
@@ -138,4 +143,29 @@ header {
   border: 2px solid var(--azul);
   color: #000;
   transition: 0.5s;
+}
+
+/* Contacts ==================== */
+#contacts {
+  height: 80vh;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact-me p {
+  width: 500px;
+}
+
+/* Footer ==================== */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
 }
