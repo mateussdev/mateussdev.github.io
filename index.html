@@ -6,108 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mateus Silva - Desenvolvedor Web</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,900;1,900&display=swap"
-      rel="stylesheet"
-    />
   </head>
-  <body>
-    <header>
-      <div id="logo"><span>&lt;</span>MS<span>/&gt;</span></div>
+  <body class="grid-container">
+    <header class="grid-item-1">
+      <a href="#home" id="logo"><span>&lt;</span>MS<span>/&gt;</span></a>
 
       <nav id="menu">
         <ul id="menu-items">
-          <li class="menu-item"><a href="#about">Sobre mim</a></li>
-          <li class="menu-item"><a href="#projects">Projetos</a></li>
-          <li class="menu-item"><a href="#contacts">Contatos</a></li>
+          <li class="menu-item"><a href="#">Sobre mim</a></li>
+          <li class="menu-item"><a href="#">Projetos</a></li>
+          <li class="menu-item"><a href="#">Contatos</a></li>
         </ul>
       </nav>
     </header>
 
-    <main class="container">
-      <section id="home">
-          <div id="presentation">
-            <p>Olá, eu sou </p>
-            <h1>Mateus Silva</h1>
-            <p>Desenvolvedor Web</p>
-          </div>
-          <div class="socials">
-            <a href="https://www.linkedin.com/in/mateussdev/" target="_blank"><img src="./assets/linkedin.svg" alt="Ícone Linkedin"></a>
-            <a href="https://github.com/mateussdev" target="_blank"><img src="./assets/github.svg" alt="Ícone GitHub"></a>
-            <a href="https://instagram.com/mateusdev_" target="_blank"><img src="./assets/instagram.svg" alt="Ícone Instagram"></a>
-          </div>
-      </section>
-
-      <section id="about">
-        <h2>Sobre mim</h2>
-        <article id="about-me">
-          <img src="./assets/me.jpeg" alt="Foto de Mateus Silva" />
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, modi
-            fugiat ad in aut reiciendis quod animi, quae, provident unde neque
-            dolorum laudantium harum praesentium? Vero omnis numquam magni libero.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
-            architecto repellat quibusdam reprehenderit quae corrupti quam
-            consequatur, nihil odit sed ipsum quo non optio magnam consequuntur
-            ullam voluptatum nesciunt maxime?
-          </p>
-        </article>
-      </section>
-
-      <section id="my-projects">
-        <h2>Projetos</h2>
-          <article id="projects">
-            <div class="card-project">
-              <h3 class="project-name">Nome do Projeto</h3>
-              <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eaque, facere qui adipisci ex non odio nobis blanditiis rem aperiam amet dolor nisi, aspernatur suscipit possimus, rerum quia nulla modi!</p>
-              <a class="project-details" href="#">Mais detalhes</a>
-            </div>
-            <div class="card-project">
-              <h3 class="project-name">Nome do Projeto</h3>
-              <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eaque, facere qui adipisci ex non odio nobis blanditiis rem aperiam amet dolor nisi, aspernatur suscipit possimus, rerum quia nulla modi!</p>
-              <a class="project-details" href="#">Mais detalhes</a>
-            </div>
-            <div class="card-project">
-              <h3 class="project-name">Nome do Projeto</h3>
-              <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eaque, facere qui adipisci ex non odio nobis blanditiis rem aperiam amet dolor nisi, aspernatur suscipit possimus, rerum quia nulla modi!</p>
-              <a class="project-details" href="#">Mais detalhes</a>
-            </div>
-          </article>
-      </section>
-
-      <section id="contacts">
-        <h2>Contate-me</h2>
-        <article class="contact-me">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam rerum maxime eveniet facilis quibusdam magni sapiente necessitatibus molestias minima, a dignissimos numquam ut mollitia et ea nemo id perspiciatis cumque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, voluptas perferendis? Ut saepe, aut praesentium, ipsa non cum quam sit, magni ea cumque suscipit voluptates asperiores eaque vitae neque maxime.</p>
-
-          <div class="socials">
-            <a href=""><img src="./assets/linkedin.svg" alt="Ícon Likendin"></a>
-            <a href=""><img src="./assets/github.svg" alt="Ícon GitHub"></a>
-            <a href=""><img src="./assets/instagram.svg" alt="Ícon Instagram"></a>
-          </div>
-        </article>
-      </section>
+    <main class="grid-item-2">
+      <div class="content">
+        <h1>Mateus Silva</h1>
+        <p>Desenvolvedor Web - Front-end</p>
+      </div>
     </main>
 
-    <footer>
-      <p>
-        Feito por
-        <a href="https://github.com/mateussdev" target="_blank">Mateus Silva</a>
-      </p>
+    <footer class="grid-item-3">
+      <div class="socials">
+        <a id="linkedin-icon" href="https://www.linkedin.com/in/mateussdev/" target="_blank"
+          ><img src="./assets/linkedin.svg" alt="Ícone Linkedin"
+        /></a>
+        <a id="github-icon" href="https://github.com/mateussdev" target="_blank"
+          ><img src="./assets/github.svg" alt="Ícone GitHub"
+        /></a>
+        <a id="instagram-icon" href="https://instagram.com/mateusdev_" target="_blank"
+          ><img src="./assets/instagram.svg" alt="Ícone Instagram"
+        /></a>
+      </div>
     </footer>
   </body>
 </html>
