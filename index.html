@@ -9,19 +9,28 @@
   </head>
   <body class="grid-container">
     <header class="grid-item-1">
-      <a href="#home" id="logo"><span>&lt;</span>MS<span>/&gt;</span></a>
+      <nav class="container">
+        <a href="#home" class="logo"><span>&lt;</span>MS<span>/&gt;</span></a>
 
-      <nav id="menu">
-        <ul id="menu-items">
-          <li class="menu-item"><a href="#">Sobre mim</a></li>
-          <li class="menu-item"><a href="#">Projetos</a></li>
-          <li class="menu-item"><a href="#">Contatos</a></li>
-        </ul>
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#">Sobre</a></li>
+            <li><a class="title" href="#">Projetos</a></li>
+            <li><a class="title" href="#">Contatos</a></li>
+          </ul>
+        </div>
+        <div class="toggle icon-menu">
+          <img src="./assets/menu.svg" alt="menu icon">
+        </div>
+        <div class="toggle icon-close">
+          <img src="./assets/close.svg" alt="close menu icon">
+        </div>
       </nav>
     </header>
 
     <main class="grid-item-2">
       <div class="content">
+        <img id="developer-img" src="./assets/developer.svg" alt="" />
         <h1>Mateus Silva</h1>
         <p>Desenvolvedor Web - Front-end</p>
       </div>
@@ -29,16 +38,24 @@
 
     <footer class="grid-item-3">
       <div class="socials">
-        <a id="linkedin-icon" href="https://www.linkedin.com/in/mateussdev/" target="_blank"
+        <a
+          id="linkedin-icon"
+          href="https://www.linkedin.com/in/mateussdev/"
+          target="_blank"
           ><img src="./assets/linkedin.svg" alt="Ícone Linkedin"
         /></a>
         <a id="github-icon" href="https://github.com/mateussdev" target="_blank"
           ><img src="./assets/github.svg" alt="Ícone GitHub"
         /></a>
-        <a id="instagram-icon" href="https://instagram.com/mateusdev_" target="_blank"
+        <a
+          id="instagram-icon"
+          href="https://instagram.com/mateusdev_"
+          target="_blank"
           ><img src="./assets/instagram.svg" alt="Ícone Instagram"
         /></a>
       </div>
     </footer>
+
+    <script src="./main.js"></script>
   </body>
 </html>
