@@ -43,6 +43,8 @@ button {
   color: #fff;
 
   transition: 300ms;
+
+  cursor: pointer;
 }
 
 button:hover {
@@ -106,4 +108,38 @@ header nav .menu a:hover {
 #home aside p {
   font-size: 2rem;
   padding-block: 2.5rem;
+}
+
+/* ABOUT ======================================== */
+#about {
+  display: flex;
+  flex-direction: row;
+  gap: 15rem;
+
+  padding-top: 10rem;
+}
+
+#about article {
+  width: 50rem;
+}
+
+#about article h2 {
+  margin-bottom: 2rem;
+}
+
+#about aside {
+  width: 50rem;
+}
+
+#about aside h2 {
+  margin-bottom: 2.5rem;
+}
+
+#about aside img#js-logo {
+  margin-inline: 1.2rem;
+}
+
+#about aside img#git-logo {
+  display: block;
+  margin: 0 auto;
 }
