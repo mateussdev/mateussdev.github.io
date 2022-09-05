@@ -127,6 +127,22 @@ header nav .menu a:hover {
   padding-block: 2.5rem;
 }
 
+#home .social-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+#home .social-links a {
+  cursor: pointer;
+  transition: 300ms;
+}
+
+#home .social-links a:hover {
+  transform: translateY(-.2rem);
+}
+
 /* ABOUT ======================================== */
 #about {
   display: flex;
