@@ -4,38 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mateus Silva - Desenvolvedor Web</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Mateus Silva - Desenvolvedor Web</title>
   </head>
   <body>
     <header class="grid">
       <nav>
         <div class="logo">
-          <h1><span>&lt;</span>MS<span>&gt;</span></h1>
+          <h3><span>&lt;</span>MS<span>&gt;</span></h3>
         </div>
 
-        <ul class="menu">
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
+        <div class="menu">
+          <button><img src="./assets/menu.svg" alt=""></button>
+        </div>
       </nav>
     </header>
 
     <main>
       <section id="home" class="grid">
         <aside>
-          <h1>👋 Olá, eu sou Mateus Silva</h1>
-          <p>Desenvolvedor Web</p>
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/mateussdev/" target="_blank"><img src="./assets/linkedin-icon.svg" alt="Logo do Linkedin"></a>
-            <a href="https://github.com/mateussdev" target="_blank"><img src="./assets/github-icon.svg" alt="Logo do Github"></a>
-            <a href="https://instagram.com/mateuss.dev" target="_blank"><img src="./assets/instagram-icon.svg" alt="Logo do Instagram"></a>
-            <a href="mailto:contato.mateussdev@gmail.com"><img src="./assets/mail-icon.svg" alt="Logo do Gmail"></a>
+          <h4>👋 <span>Olá</span>, eu sou</h4>
+          <h2>Mateus Silva</h2>
+          <h4>Desenvolvedor Web</h4>
+          <a href="./pages/contact.html" class="button">Contate-me</a>
           </div>
         </aside>
         <picture>
-          <img src="./assets/me.svg" alt="Foto de Perfil" />
+          <img id="me" src="./assets/me.svg" alt="Foto de Perfil" />
         </picture>
       </section>
 
@@ -43,16 +41,23 @@
         <article>
           <h2>Sobre</h2>
           <p>
-            Sou um desenvolvedor web em progresso, atualmente estou focando meus
-            estudos para me tornar um front-end, construir interfaces intuitivas
+            Comecei meus estudos na Área de Tecnologia em 2018, quando entrei em uma Escola Profissionalizante da minha cidade, cursando Técnico em Informática. Onde tive meu primeiro contato com a Programação e Desenvolvimento Web. Logo de cara vi que era isso que eu queria pra minha vida, me apaixonei pela a área, específicamente Desenvolvimento Web.
+          </p>
+
+          <p>
+            Hoje, sou um Desenvolvedor Web em progresso, atualmente estou focando meus
+            estudos para me tornar um Front-end, construir interfaces intuitivas
             e com uma boa usabilidade, visando sempre facilitar a vida do
             usuário é o foco dos meus estudos.
-          </p>
+          </p> 
+
+          <p>Ainda não tenho experiência profissional, mas estou sempre praticando meus conhecimentos fazendo projetos pessoais, fazendo cursos e desenvolvendo os projetos propostos. E estou em busca de uma oportunidade de entrar no mercado de trabalho que possa me proporcionar evoluir como desenvolvedor.</p> 
+          
         </article>
 
         <aside>
           <h2>Habilidades</h2>
-          <img
+          <!-- <img
             id="html-logo"
             src="./assets/html-logo.svg"
             alt="Logo da linguagem de marcação de texto HTML"
@@ -71,11 +76,11 @@
             id="git-logo"
             src="./assets/git-logo.svg"
             alt="Logo do sistema de controle de versões GIT"
-          />
+          /> -->
         </aside>
       </section>
 
-      <section id="projects" class="grid">
+      <!-- <section id="projects" class="grid">
         <h2>Projetos</h2>
 
         <div id="cards">
@@ -92,13 +97,9 @@
           </div>
         </div>
         </div>
-      </section>
+      </section> -->
 
-      <footer id="contact" class="grid">
-        <h2>Contato</h2>
-
-        <h3>EM BREVE</h3>
-      </footer>
+      <footer class="grid"></footer>
     </main>
   </body>
 </html>

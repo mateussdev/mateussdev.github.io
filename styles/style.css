@@ -11,16 +11,24 @@
   /* colors */
   --primary-color: #1B1B1B;
   --secundary-color: #00C9FF;
+
+  --standard-font: 'Poppins', sans-serif;
 }
 
 .grid {
-  padding-inline: 9.8rem;
+  max-width: 60rem;
+
+  margin: 0 auto;
+  
+  padding-inline: 3rem;
 }
 
 html, body {
   background: var(--primary-color);
   color: #fff;
+  font-family: var(--standard-font);
   font-size: 1.6rem;
+  font-weight: 400;
 }
 
 li {
@@ -48,15 +56,28 @@ a {
   border-radius: 1.2rem;
 }
 
-button, .button {
-  width: 15rem;
+button {
+  background: none;
+  border: none;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 14rem;
   height: 5rem;
+
+  margin-top: 2rem;
 
   border: none;
   border-radius: 1.2rem;
   background: var(--secundary-color);
 
-  font-size: 1.8rem;
+  font-family: var(--standard-font);
+  font-size: 1.6rem;
+  font-weight: 400;
   color: #fff;
 
   transition: 300ms;
@@ -64,7 +85,7 @@ button, .button {
   cursor: pointer;
 }
 
-button:hover, .button:hover {
+.button:hover {
   opacity: 0.8;
 }
 
@@ -75,106 +96,104 @@ header nav{
   justify-content: space-between;
   align-items: center;
 
-  padding-block: 3rem;
+  padding-top: 2rem;
 }
 
 header nav .logo {
-  font-size: 3rem;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: .1rem;
 }
 
 header nav .logo span {
   color: var(--secundary-color);
 }
 
-header nav .menu {
-  display: flex;
-  flex-direction: row;
-  gap: 11.5rem;
-}
-
-header nav .menu a {
-  font-size: 1.8rem;
-  color: #fff;
-
-  transition: 300ms;
-}
-
-header nav .menu a:hover {
-  color: var(--secundary-color);
+section#projects {
+  display: none;
 }
 
 /* HOME ======================================== */
 #home {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10rem;
-
-  padding-top: 5rem;
+  flex-direction: column-reverse;
 }
 
 #home aside {
-  width: 46rem;
-}
-
-#home aside h1 {
-  font-size: 3.2rem;
-}
-
-#home aside p {
-  font-size: 2rem;
-  padding-block: 2.5rem;
-}
-
-#home .social-links {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 1rem;
 }
 
-#home .social-links a {
-  cursor: pointer;
-  transition: 300ms;
+#home aside {
+  margin-top: 4rem;
+  margin-bottom: 5rem;
 }
 
-#home .social-links a:hover {
-  transform: translateY(-.2rem);
+#home aside h4 {
+  font-family: var(--standard-font);
+  font-size: 2rem;
+  color: #fafafa;
+  font-weight: 300;
+}
+
+#home aside h4 span {
+  font-family: var(--standard-font);
+  color: var(--secundary-color);
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+#home aside h2 {
+  font-family: var(--standard-font);
+  font-size: 4rem;
+  letter-spacing: .16rem;
+}
+
+#home .button {
+  font-size: 1.8rem;
+}
+
+#home #me {
+  display: block;
+
+  width: 30rem;
+  height: 30rem;
+
+  margin: 0 auto;
+  margin-top: 5rem;
 }
 
 /* ABOUT ======================================== */
 #about {
   display: flex;
-  flex-direction: row;
-  gap: 15rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
 
-  padding-top: 10rem;
-}
-
-#about article {
-  width: 50rem;
+  text-align: center;
 }
 
 #about article h2 {
+  font-family: var(--standard-font);
+  font-size: 2.5rem;
   margin-bottom: 2rem;
 }
 
-#about aside {
-  width: 50rem;
+#about article p {
+  text-align: justify;
+
+  font-size: 1.6rem;
+
+  margin-bottom: 2rem;
 }
 
 #about aside h2 {
+  font-family: var(--standard-font);
+  font-size: 2.5rem;
   margin-bottom: 2.5rem;
-}
-
-#about aside img#js-logo {
-  margin-inline: 1.2rem;
-}
-
-#about aside img#git-logo {
-  display: block;
-  margin: 0 auto;
 }
 
 /* PROJECTS ======================================== */
@@ -183,6 +202,8 @@ header nav .menu a:hover {
 }
 
 #projects h2 {
+  font-family: var(--standard-font);
+  font-size: 3rem;
   text-align: center;
   
   margin-bottom: 4rem;
@@ -258,25 +279,4 @@ header nav .menu a:hover {
   opacity: 1;
 }
 
-/* FOOTER CONTACT ======================================== */
-#contact {
-  display: flex;
-  flex-direction: column;
-
-  text-align: center;
-
-  width: 80rem;
-
-  margin: 0 auto;
-}
-
-#contact h2 {
-  margin-bottom: 4rem;
-}
-
-#contact h3 {
-  background: linear-gradient(to right, var(--primary-color), var(--secundary-color), var(--primary-color));
-
-  margin-bottom: 4rem;
-  padding: .5rem 6rem;
-}
+/* FOOTER  ======================================== */
