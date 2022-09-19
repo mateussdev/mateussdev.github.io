@@ -18,7 +18,14 @@
         </div>
 
         <div class="menu">
-          <button><img src="./assets/menu.svg" alt="Menu Icon"></button>
+          <button onclick="openMenu()" id="open-menu"><img src="./assets/menu.svg" alt="Menu Icon"></button>
+          <button onclick="closeMenu()" id="close-menu"><img src="./assets/close.svg" alt="Menu Icon"></button>
+
+          <ul>
+            <a onclick="closeMenu()" href="#about"><li>Sobre</li></a>
+            <a onclick="closeMenu()" href="#projects"><li>Projetos</li></a>
+            <a onclick="closeMenu()" href="#"><li>Contatos</li></a>
+          </ul>
         </div>
       </nav>
     </header>
@@ -159,5 +166,7 @@
     </main>
 
     <script src="https://kit.fontawesome.com/8a34c96b65.js" crossorigin="anonymous"></script>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
