@@ -1,0 +1,139 @@
+/* RESPONSIVE LAYOUT */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* GERAL ======================================== */
+  .grid {
+    max-width: 100vw;
+
+    padding-inline: 9.8rem;
+  }
+
+  #home, #about, #projects, footer {
+    max-width: 100vw;
+  }
+
+  /* HEADER ======================================== */
+  header nav {
+    padding-inline: 0;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  header nav .menu ul {
+    position: absolute;
+    top: 2.5rem;
+    right: 3rem;
+  }
+  
+  header nav .menu #open-menu {
+    display: none;
+  }
+
+  header nav .menu ul {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  header nav .menu ul a {
+    color: #FFFFFF;
+    opacity: 0.6;
+
+    transition: 300ms;
+  }
+
+  header nav .menu ul a:hover {
+    opacity: 1;;
+  }
+
+  /* ABOUT ======================================== */
+  #about aside #skills {
+    flex-direction: row;
+  }
+}
+
+	/* Large devices (laptops/desktops, 992px and up) */
+	@media only screen and (min-width: 992px) {
+  /* GERAL ======================================== */
+    #home, #about, #projects {
+      height: 100vh;
+    }
+
+    html, body {
+      text-align: left;
+    }
+
+  /* HEADER ======================================== */
+  
+
+  /* HOME ======================================== */
+    section#home {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      padding-bottom: 10rem;
+    }
+
+    section#home aside {
+      width: 50rem;
+
+      text-align: left;
+    }
+
+    section#home aside h4 {
+      font-size: 2rem;
+    }
+
+    
+    section#home aside h4 span {
+      font-size: 2.2rem;
+    }
+    
+    section#home #name-title {
+      font-size: 4rem;
+    }
+
+    section#home #me {
+      width: 46rem;
+      height: 46rem;
+    }
+
+  /* ABOUT ======================================== */
+    section#about  {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    
+    section#about h2 {
+      font-size: 3rem;
+    }
+
+    section#about article {
+      width: 70rem;
+    }
+
+    section#about aside #skills {
+      display: grid;
+      grid-template-areas: 
+      'one two'
+      'three four';
+    }
+
+  /* PROJECTS ======================================== */
+    #projects {
+      margin-bottom: 5rem;
+    }
+
+    #projects h2 {
+      margin-top: 5rem;
+    }
+    
+    #projects #cards {
+      flex-direction: row;
+    }
+  }
