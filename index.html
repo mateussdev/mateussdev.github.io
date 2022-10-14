@@ -26,7 +26,7 @@
           <ul>
             <a onclick="closeMenu()" href="#about"><li>Sobre</li></a>
             <a onclick="closeMenu()" href="#projects"><li>Projetos</li></a>
-            <a onclick="closeMenu()" href="#"><li>Contato</li></a>
+            <a onclick="closeMenu()" href="#contact"><li>Contato</li></a>
           </ul>
         </div>
       </nav>
@@ -34,17 +34,19 @@
 
     <main>
       <section id="home" class="grid">
-        <aside>
-          <!-- <p class="line type-animation"><span>Olá, eu sou</span> Mateus Silva</p> 
-          <p class="line2 type-animation2">Desenvolvedor Web</p>  -->
+        <i class="fa-solid fa-laptop-code"></i>
+
+        <div class="presentation">
           <h4>👋 <span>Olá</span>, eu sou</h4>
-          <h2 id="name-title">Mateus Silva</h2>
-          <h4>Desenvolvedor Web</h4>
-          <a href="./pages/contact.html" class="button">Contate-me</a>
-        </aside>
-        <picture>
-          <img id="me" src="./assets/images/me.svg" alt="Foto de Perfil" />
-        </picture>
+          <h2 id="name-title">Mateus Silva.</h2>
+          <h4 class="dynamic-text">
+            <ul>
+              <li><span>Desenvolvedor Web.</span></li>
+              <li><span>Front-End.</span></li>
+            </ul>
+          </h4>
+          <a href="#contact" class="button">Contate-me</a>
+        </div>
       </section>
 
       <section id="about" class="grid">
@@ -157,13 +159,39 @@
         </div>
       </section>
 
+      <section id="contact" class="grid">
+        <h2>Contato</h2>
+        <i class="fa-solid fa-address-card"></i>
+
+        <ul class="contacts">
+          <li>
+            <a href="mailto:contato.mateussdev@gmail.com" title="Enviar um email.">
+              <i class="fa-regular fa-envelope"></i>
+              contato.mateussdev@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/mateussdev/" target="_blank" title="Conecte-se comigo no linkedin e vamos conversar.">
+              <i class="fa-brands fa-linkedin-in"></i>
+              mateussdev
+            </a>
+          </li>
+        </ul>
+      </section>
+
       <footer class="grid">
-        <p>Desenvolvido por <span>Mateus Silva</span></p>
+        <p>Copyright &copy; 2022 Mateus Silva</p>
 
         <div class="social-links">
-          <a href="https://www.linkedin.com/in/mateussdev/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://github.com/mateussdev" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-          <a href="https://instagram.com/mateuss.dev" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/mateussdev/" target="_blank">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/mateussdev" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://instagram.com/mateuss.dev" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
         </div>
       </footer>
     </main>

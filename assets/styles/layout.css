@@ -123,40 +123,114 @@ header nav .menu.show button {
 /* HOME ======================================== */
 #home {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+
+  height: 80vh;
 
   background: var(--primary-color);
 
   margin-top: 5rem;
 }
 
-#home aside {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#home .fa-laptop-code {
+  font-size: 15rem;
+  background: -webkit-linear-gradient(var(--secundary-color), #58ACFA);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: to-float 3s infinite backwards;
 }
 
-#home aside {
-  margin-top: 4rem;
-  margin-bottom: 5rem;
+@keyframes to-float {
+  0% {
+    transform: translateY(1rem);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(1rem);
+  }
 }
 
-#home aside h4 {
+#home h4 {
   font-family: var(--standard-font);
   font-size: 2rem;
   color: #fafafa;
   font-weight: 300;
 }
 
-#home aside h4 span {
+#home .dynamic-text {
+  overflow: hidden;
+
+  height: 3rem;
+}
+
+#home .dynamic-text li {
+  position: relative;
+  top: 0;
+  animation-name: slide;
+  animation-duration: 10s;
+  animation-timing-function: steps(2);
+  animation-iteration-count: infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -6.6rem;
+  }
+}
+
+#home .dynamic-text li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border-left: .2rem solid #fff;
+
+  animation: typing 5s steps(15) infinite;
+
+  background: var(--primary-color);
+}
+
+@keyframes typing {
+  40%, 60% {
+    left: 80%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+#home .dynamic-text li:nth-of-type(2)::after {
+  animation-name: typing-short;
+}
+
+@keyframes typing-short {
+  40%, 60% {
+    left: 42%;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+#home h4 span {
   font-family: var(--standard-font);
   color: var(--secundary-color);
   font-size: 2.2rem;
   font-weight: 700;
 }
 
-#home aside h2 {
+#home h2 {
   font-family: var(--standard-font);
   font-size: 4rem;
   letter-spacing: .16rem;
@@ -188,7 +262,7 @@ header nav .menu.show button {
 }
 
 #about article {
-  margin-top: 10rem;
+  padding-top: 10rem;
 }
 
 #about article h2 {
@@ -350,6 +424,54 @@ header nav .menu.show button {
   opacity: 1;
 }
 
+/* CONTACT  ======================================== */
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+  height: 90vh;
+
+  /* padding-top: 5rem; */
+  padding-bottom: 3rem;
+}
+
+#contact .fa-address-card {
+  font-size: 15rem;
+  background: -webkit-linear-gradient(var(--secundary-color), #58ACFA);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow: .5rem .5rem 1.5rem rgba(0,0,0,0.2);
+}
+
+#contact li {
+  padding: 1rem;
+  font-weight: 300;
+
+  border-radius: 1.2rem;
+
+  transition: background 400ms;
+}
+
+#contact li:hover {
+  background-color: rgba(128, 128, 128, 0.253);
+}
+
+#contact a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #fff;
+}
+
+#contact .fa-envelope, #contact .fa-linkedin-in {
+  font-size: 2.4rem;
+  color: var(--secundary-color);
+}
+
 /* FOOTER  ======================================== */
 footer {
   display: flex;
@@ -391,16 +513,16 @@ footer .social-links a i {
   transition: 300ms;
 }
 
-footer .social-links a i.fa-square-instagram:hover {
-  color: #D22C64;
+footer .social-links a i.fa-linkedin-in:hover {
+  color: #0077B5;
 }
 
-footer .social-links a i.fa-square-github:hover {
+footer .social-links a i.fa-github:hover {
   color: #777777;
 }
 
-footer .social-links a i.fa-linkedin:hover {
-  color: #0077B5;
+footer .social-links a i.fa-instagram:hover {
+  color: #EF3372;
 }
 
 footer .social-links a:hover {
