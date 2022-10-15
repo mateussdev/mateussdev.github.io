@@ -90,6 +90,10 @@
     section#home .presentation h4 span {
       font-size: 2.2rem;
     }
+
+    section#home .presentation .button {
+      margin-inline: 0;
+    }
     
     section#home #name-title {
       font-size: 4rem;

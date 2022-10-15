@@ -7,7 +7,7 @@ header nav{
 
   width: 100vw;
 
-  background-color: var(--primary-color);
+  background-color: #0a0a0a;
   color: #FAFAFA;
 
   display: flex;
@@ -21,7 +21,7 @@ header nav{
 
 
 header nav.scroll {
-  background-color: #2b2b2b;
+  background-color: rgba(0, 0, 0, 0.9);
 
   transition: background 300ms;
 }
@@ -75,7 +75,7 @@ header nav .menu.show {
   width: 100vw;
   height: 100vh;
 
-  background-color: var(--primary-color);
+  background-color: #0a0a0a;
 
   display: flex;
   flex-direction: column;
@@ -128,11 +128,13 @@ header nav .menu.show button {
   align-items: center;
   gap: 5rem;
 
-  height: 80vh;
+  height: 100vh;
 
-  background: var(--primary-color);
+  background: #0a0a0a;
+}
 
-  margin-top: 5rem;
+#home .presentation .button{
+  margin: 2rem auto;
 }
 
 #home .fa-laptop-code {
@@ -196,7 +198,7 @@ header nav .menu.show button {
 
   animation: typing 5s steps(15) infinite;
 
-  background: var(--primary-color);
+  background: #0a0a0a;
 }
 
 @keyframes typing {
@@ -317,7 +319,18 @@ header nav .menu.show button {
 
 /* PROJECTS ======================================== */
 #projects {
+  background-color: #0a0a0a;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   padding-block: 10rem;
+}
+
+#projects.grid {
+  margin-bottom: 0;
 }
 
 #projects h2 {
@@ -334,6 +347,8 @@ header nav .menu.show button {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+
+  padding-bottom: 10rem;
 }
 
 #projects #cards .card {
@@ -406,13 +421,12 @@ header nav .menu.show button {
 
 #projects #cards .card a {
   color: #fafafa;
-  text-decoration: underline;
 
-  transition: 300ms;
+  transition: all 300ms;
 }
 
 #projects #cards .card a:hover {
-  color: var(--secundary-color);
+  text-decoration: underline;
 }
 
 #projects #cards .fa-link, .fa-github {
@@ -426,15 +440,26 @@ header nav .menu.show button {
 
 /* CONTACT  ======================================== */
 #contact {
+  height: 80vh;
+  padding-top: 10rem;
+
+}
+
+#contact h2 {
+  text-align: center;
+
+  margin-bottom: 3rem;
+}
+
+#contact .contact-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 3rem;
 
-  height: 90vh;
 
-  /* padding-top: 5rem; */
+  /* padding-top: -30rem; */
   padding-bottom: 3rem;
 }
 
@@ -478,7 +503,7 @@ footer {
   flex-direction: column-reverse;
   gap: 1rem;
 
-  background: #2b2b2b;
+  background: #0a0a0a;
 
   text-align: center;
 
