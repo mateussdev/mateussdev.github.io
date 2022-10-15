@@ -4,4 +4,4 @@
 
 > Meu portfólio.
 
-🚧 Projeto em construção... 🚧
+<p align="center">🚧 Projeto em construção... 🚧</p>
