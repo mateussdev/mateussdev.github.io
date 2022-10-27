@@ -4,4 +4,3 @@
 ![Badge em Desenvolvimento](https://img.shields.io/badge/status-EM%20DESENVOLVIMENTO-green)
 
 > Meu portfólio.
-teste
