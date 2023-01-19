@@ -1,28 +1,37 @@
-const menu = document.querySelector('.menu');
+const menuIcon = document.querySelector("#menuIcon");
 
-function openMenu() {
-  menu.classList.add('show');
-}
-
-function closeMenu() {
-  menu.classList.remove('show')
-}
-
-// adicionar sombra ao header quando der scroll na página
-// add shadow to header when scrolling page
-const nav = document.querySelector('nav')
-const navHeight = nav.offsetHeight
-function changeHeaderWhenScroll() {
-  if (window.scrollY >= navHeight) {
-    // scroll é maior que a altura do header
-    nav.classList.add('scroll')
+function toggleMenu(event) {
+  if (event.type === "touchstart") event.preventDefault();
+  const nav = document.querySelector("#nav");
+  nav.classList.toggle("active");
+  const active = nav.classList.contains("active");
+  event.currentTarget.setAttribute("aria-expanded", active);
+  if (active) {
+    event.currentTarget.setAttribute("aria-label", "Fechar Menu");
   } else {
-    // menor que a altura do header
-    nav.classList.remove('scroll')
+    event.currentTarget.setAttribute("aria-label", "Abrir Menu");
   }
 }
 
-// When scroll
-window.addEventListener('scroll', function () {
-  changeHeaderWhenScroll()
-})
+menuIcon.addEventListener("click", toggleMenu);
+menuIcon.addEventListener("touchstart", toggleMenu);
+
+
+// // adicionar sombra ao header quando der scroll na página
+// // add shadow to header when scrolling page
+// const nav = document.querySelector('nav')
+// const navHeight = nav.offsetHeight
+// function changeHeaderWhenScroll() {
+//   if (window.scrollY >= navHeight) {
+//     // scroll é maior que a altura do header
+//     nav.classList.add('scroll')
+//   } else {
+//     // menor que a altura do header
+//     nav.classList.remove('scroll')
+//   }
+// }
+
+// // When scroll
+// window.addEventListener('scroll', function () {
+//   changeHeaderWhenScroll()
+// })
