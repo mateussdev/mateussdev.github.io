@@ -8,9 +8,17 @@
 
 :root {
   font-size: 62.5%;
+
+  --primary-color: #1B1B1B;
+  --secondary-color: #0000FF;
+  --color-text: #fff;
 }
 
 html, body {
+  background-color: var(--primary-color);
+  color: var(--color-text);
+
+  font-family: 'Roboto', sans-serif;;
   font-size: 1.6rem;
 }
 
@@ -22,13 +30,12 @@ li {
   list-style: none;
 }
 
-li, a {
-  color: black;
+li a {
+  color: currentColor;
 }
 
 .container {
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-inline: 12rem;
 }
 
 header {
@@ -36,9 +43,19 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  background: lightblue;
+  color: var(--color-text);
 
   height: 7rem;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.logo span {
+  color: var(--secondary-color);
 }
 
 .menu {
@@ -52,8 +69,86 @@ header {
 .menu a {
   display: block;
   padding: .5rem;
+
+  font-size: 1.8rem;
+
+  transition: color 300ms;
+}
+
+.menu a:hover {
+  color: var(--secondary-color);
 }
 
 .menu-icon {
   display: none;
 }
+
+#home {
+  display: grid;
+  grid-template-areas: 'text-content img-content';
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  height: calc(100vh - 7rem);
+}
+
+#home .home-text-content {
+  grid-area: text-content;
+
+  max-width: 46rem;
+  max-height: 46rem;
+
+  padding: 4rem 2rem;
+}
+
+#home .home-text-content h1 {
+  font-size: 3.2rem;
+
+  padding-bottom: 2.5rem;
+}
+
+#home .home-text-content p {
+  font-size: 1.8rem;
+
+  padding-bottom: 2.5rem;
+}
+
+#home .home-text-content .btn-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 20rem;
+  height: 5rem;
+
+  border: none;
+  border-radius: 1.2rem;
+  background-color: var(--secondary-color);
+  color: var(--color-text);
+
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+#home .home-text-content .btn-cv:hover {
+  filter: brightness(0.6);
+} 
+
+#home .home-img-content {
+  grid-area: img-content;
+
+
+  max-width: 46rem;
+  max-height: 46rem;
+}
+
+#home .home-img-content img {
+  width: 46rem;
+  height: 46rem;
+}
+
+

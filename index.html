@@ -9,8 +9,10 @@
       name="description"
       content="Olá, eu sou Mateus Silva. Desenvolvedor Front-End."
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -18,12 +20,8 @@
   </head>
   <body>
     <header class="container">
-      <a class="logo" href="#home">&lt;MateusSilva&gt;</a>
-      <!-- 
+      <a class="logo" href="#home">MS<span>.dev</span></a>
 
-        
-        <button class="close-menu"><i class="material-icons">close</i></button>
- -->
       <nav id="nav">
         <button
           id="menuIcon"
@@ -43,8 +41,26 @@
       </nav>
     </header>
 
-    <main>
-      <section id="home"></section>
+    <main class="container">
+      <section id="home">
+        <div class="home-text-content">
+          <h1>👋 Olá, eu sou Mateus Silva</h1>
+          <p>Desenvolvedor Front-End</p>
+          <a
+            href="./assets/pdf/mateus-silva-curriculum-vitae.pdf"
+            download="Mateus Silva Curriculum Vitae"
+            class="btn-cv"
+            >Baixar CV</a
+          >
+        </div>
+
+        <div class="home-img-content">
+          <img
+            src="./assets/img/developer.svg"
+            alt="Ilustração de homem sentado em seu escritório usando seu laptop."
+          />
+        </div>
+      </section>
     </main>
 
     <footer></footer>
