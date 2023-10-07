@@ -16,6 +16,21 @@ function toggleMenu(event) {
 menuIcon.addEventListener("click", toggleMenu);
 menuIcon.addEventListener("touchstart", toggleMenu);
 
+const header = document.querySelector("header");
+const navHeight = header.offsetHeight;
+function changeHeaderWhenScroll() {
+  if (window.scrollY >= navHeight) {
+    // scroll é maior que a altura do header
+    header.classList.add("scroll");
+  } else {
+    // menor que a altura do header
+    header.classList.remove("scroll");
+  }
+}
+
+window.addEventListener("scroll", function () {
+  changeHeaderWhenScroll();
+});
 
 // // adicionar sombra ao header quando der scroll na página
 // // add shadow to header when scrolling page

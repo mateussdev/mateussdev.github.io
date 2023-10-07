@@ -10,7 +10,7 @@
   font-size: 62.5%;
 
   --primary-color: #1B1B1B;
-  --secondary-color: #0000FF;
+  --secondary-color: #0080FF;
   --color-text: #fff;
 }
 
@@ -38,14 +38,30 @@ li a {
   padding-inline: 12rem;
 }
 
+section {
+  height: 100vh;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+
   color: var(--color-text);
 
+  width: 100%;
   height: 7rem;
+
+  position: fixed;
+  z-index: 99;
+
+  transition: border 300ms;
+}
+
+header.scroll {
+  background: #1b1b1be8;
+  border-bottom: 1px solid #0080ff52;
 }
 
 .logo {
@@ -118,8 +134,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: .5rem;
 
-  width: 20rem;
+  width: 15rem;
   height: 5rem;
 
   border: none;
@@ -137,6 +154,10 @@ header {
 #home .home-text-content .btn-cv:hover {
   filter: brightness(0.6);
 } 
+
+#home .home-text-content .btn-cv span {
+  font-size: 2rem;
+}
 
 #home .home-img-content {
   grid-area: img-content;
