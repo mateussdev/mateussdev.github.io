@@ -39,7 +39,8 @@ li a {
 }
 
 section {
-  height: 100vh;
+  height: calc(100vh - 7rem);
+  padding-top: 7rem;
 }
 
 header {
@@ -105,8 +106,6 @@ header.scroll {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-
-  height: calc(100vh - 7rem);
 }
 
 #home .home-text-content {
@@ -119,7 +118,7 @@ header.scroll {
 }
 
 #home .home-text-content h1 {
-  font-size: 3.2rem;
+  font-size: 3.6rem;
 
   padding-bottom: 2.5rem;
 }
@@ -170,6 +169,62 @@ header.scroll {
 #home .home-img-content img {
   width: 46rem;
   height: 46rem;
+}
+
+#about h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+#about .grid-area-content{
+  display: grid;
+  grid-template-areas: 'img-content text-content';
+  justify-content: stretch;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.about-img-content img {
+  grid-area: img-content;
+  max-width: 40rem;
+  max-width: 30rem;
+
+  border-radius: 1.2rem;
+}
+
+.about-text-content {
+  grid-area: text-content;
+  max-width: 50rem;
+}
+
+.about-text-content p {
+  font-size: 1.8rem;
+  line-height: 1.2;
+  text-align: justify;
+}
+
+.about-text-content .my-skills {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  gap: 2rem;
+}
+
+.about-text-content .my-skills .card-lang {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about-text-content .my-skills .card-lang img {
+  margin-top: 3rem;
+  width: 5rem;
+}
+
+.about-text-content .my-skills .card-lang img span {
+  color: var(--secondary-color);
 }
 
 
